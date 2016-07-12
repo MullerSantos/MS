@@ -213,6 +213,7 @@
     <Compile Include="Riscos.cs" />
     <Compile Include="Setores.cs" />
     <Compile Include="Startup.cs" />
+    <Compile Include="Teste.cs" />
     <Compile Include="TipoCadastro.cs" />
     <Compile Include="utils.cs" />
   </ItemGroup>
