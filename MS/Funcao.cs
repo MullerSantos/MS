@@ -18,7 +18,6 @@ namespace MS
         [Required(ErrorMessage = "Campo de Preenchimento obrigatório", AllowEmptyStrings = false)]
         [MaxLength(30)]
         [Display(Name ="Função")]
-        [Key]
         public string funcao { get; set; }
     }
 }

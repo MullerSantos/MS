@@ -7,17 +7,21 @@ using System.ComponentModel.DataAnnotations;
 
 namespace MS
 {
-    public class Riscos
+    public class Agentes
     {
         [Required]
         [MaxLength(4)]
         [Display(Name ="Código")]
         [Key]
-        public int IDRisco { get; set; }
+        public int IDagente { get; set; }
 
-        [Required(ErrorMessage = "Campo de Preenchimento obrigatório", AllowEmptyStrings = false)]
-        [MaxLength(30)]
         [Display(Name ="Risco")]
-        public string risco { get; set; }
+        ICollection<Riscos> risco { get; set; }
+
+        [Required(ErrorMessage = "Campo de Preenchimento Obrigatório", AllowEmptyStrings = false)]
+        [MaxLength(30)]
+        [Display(Name ="Agente")]
+        public string agente { get; set; }
+
     }
 }
